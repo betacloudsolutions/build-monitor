@@ -1,0 +1,25 @@
+---
+version: '3'
+
+services:
+  build-monitor:
+    container_name: build-monitor
+    restart: unless-stopped
+    image: marcells/node-build-monitor
+    volumes:
+      - ./configuration/config.json:/build-mon/app/config.json
+    environment:
+      NODE_ENV: production
+    networks:
+      - default
+      - services
+    labels:
+     - "traefik.enable=true"
+     - "traefik.docker.network=services"
+     - "traefik.web.port=3000"
+     - "traefik.web.entryPoints=https"
+     - "traefik.web.frontend.rule=Host:build-monitor.betacloud-solutions.de"
+
+networks:
+  services:
+    external: true

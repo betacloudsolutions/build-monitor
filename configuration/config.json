@@ -1,0 +1,107 @@
+{
+  "monitor": {
+    "interval": 5000,
+    "numberOfBuilds": 1,
+    "latestBuildOnly": true,
+    "sortOrder": "date",
+    "debug": false 
+  },
+  "services": [
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-aptly"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-ara-server"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-ara-web"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-ceph-ansible"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-cobbler"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-kolla-ansible"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-osism-ansible"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/docker-template"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-chrony"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-common"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-docker"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-hostname"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-hosts"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-netdata"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-osquery"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "osism/ansible-template"
+      }
+    }
+  ]
+}

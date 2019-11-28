@@ -1,0 +1,18 @@
+---
+repositories:
+  - osism/docker-aptly
+  - osism/docker-ara-server
+  - osism/docker-ara-web
+  - osism/docker-ceph-ansible
+  - osism/docker-cobbler
+  - osism/docker-kolla-ansible
+  - osism/docker-osism-ansible
+  - osism/docker-template
+  - osism/ansible-chrony
+  - osism/ansible-common
+  - osism/ansible-docker
+  - osism/ansible-hostname
+  - osism/ansible-hosts
+  - osism/ansible-netdata
+  - osism/ansible-osquery
+  - osism/ansible-template

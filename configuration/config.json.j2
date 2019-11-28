@@ -1,0 +1,19 @@
+{
+  "monitor": {
+    "interval": 5000,
+    "numberOfBuilds": 1,
+    "latestBuildOnly": true,
+    "sortOrder": "date",
+    "debug": false 
+  },
+  "services": [
+{%- for repository in repositories %}
+    {
+      "name": "Travis",
+      "configuration": {
+        "slug": "{{ repository }}"
+      }
+    }{{ "," if not loop.last }}
+{%- endfor %}
+  ]
+}
