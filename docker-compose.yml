@@ -4,22 +4,17 @@ version: '3'
 services:
   build-monitor:
     container_name: build-monitor
-    restart: unless-stopped
     image: marcells/node-build-monitor
     volumes:
       - ./configuration/config.json:/build-mon/app/config.json
     environment:
       NODE_ENV: production
-    networks:
-      - default
-      - services
     labels:
-     - "traefik.enable=true"
-     - "traefik.docker.network=services"
-     - "traefik.web.port=3000"
-     - "traefik.web.entryPoints=https"
-     - "traefik.web.frontend.rule=Host:build-monitor.betacloud-solutions.de"
-
-networks:
-  services:
-    external: true
+      - "traefik.http.routers.build-monitor.entrypoints=http"
+      - "traefik.http.routers.build-monitor.rule=Host(`build-monitor.betacloud-solutions.de`)"
+      - "traefik.http.middlewares.build-monitor-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.build-monitor.middlewares=build-monitor-https-redirect"
+      - "traefik.http.routers.build-monitor-secure.entrypoints=https"
+      - "traefik.http.routers.build-monitor-secure.rule=Host(`build-monitor.betacloud-solutions.de`)"
+      - "traefik.http.routers.build-monitor-secure.tls=true"
+      - "traefik.http.routers.build-monitor-secure.tls.certresolver=http"
