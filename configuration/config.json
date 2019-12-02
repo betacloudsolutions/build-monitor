@@ -1,30 +1,12 @@
 {
   "monitor": {
-    "interval": 5000,
+    "interval": 10000,
     "numberOfBuilds": 1,
     "latestBuildOnly": true,
     "sortOrder": "date",
     "debug": false 
   },
   "services": [
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-aptly"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-ara-server"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-ara-web"
-      }
-    },
     {
       "name": "Travis",
       "configuration": {
@@ -40,193 +22,13 @@
     {
       "name": "Travis",
       "configuration": {
-        "slug": "osism/docker-cephclient"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-cobbler"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-installer"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
         "slug": "osism/docker-kolla-ansible"
       }
     },
     {
       "name": "Travis",
       "configuration": {
-        "slug": "osism/docker-openstackclient"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
         "slug": "osism/docker-osism-ansible"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/docker-template"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-chrony"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-cockpit"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-common"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-configuration"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-docker"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-helper"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-hostname"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-hosts"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-manager"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-mirror"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-netdata"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-network-interfaces"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-operator"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-osquery"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-prometheus"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-prometheus-exporter"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-proxy"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-repository"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-resolvconf"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/ansible-template"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/documentation"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/osism-ansible"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/cfg-master"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/travis-trigger"
-      }
-    },
-    {
-      "name": "Travis",
-      "configuration": {
-        "slug": "osism/release"
       }
     }
   ]
