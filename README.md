@@ -1,5 +1,7 @@
 # Build monitor
 
+[![Build Status](https://travis-ci.org/betacloudsolutions/build-monitor.svg?branch=master)](https://travis-ci.org/betacloudsolutions/build-monitor)
+
 * https://marcells.github.io/node-build-monitor/
 * https://build-monitor.betacloud-solutions.de/
 

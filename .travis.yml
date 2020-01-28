@@ -1,0 +1,12 @@
+---
+dist: bionic
+language: python
+
+before_install:
+  - scripts/travis.sh
+  - pip3 install -r requirements.txt
+
+script:
+  - docker-compose up -d
+  - jinja2 -o configuration/config.json configuration/config.json.j2 configuration/data.yml --format yml
+  - git diff --exit-code configuration/config.json || ( echo "Please update configuration/config.json" && exit 1 )
