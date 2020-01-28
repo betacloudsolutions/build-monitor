@@ -3,4 +3,5 @@ repositories:
   - osism/docker-ceph-ansible
   - osism/docker-ceph-container
   - osism/docker-kolla-ansible
+  - osism/docker-kolla-docker
   - osism/docker-osism-ansible

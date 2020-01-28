@@ -28,6 +28,12 @@
     {
       "name": "Travis",
       "configuration": {
+        "slug": "osism/docker-kolla-docker"
+      }
+    },
+    {
+      "name": "Travis",
+      "configuration": {
         "slug": "osism/docker-osism-ansible"
       }
     }
